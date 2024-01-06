@@ -33,7 +33,7 @@ Route::group(['middleware'=>'guest'],function(){
 Route::group(['middleware'=>'auth'],function(){
    
     Route::get('/home',function(){
-        return view('template.layout',['content'=>'..\dashboard','title'=>'dashboard']);
+        return view('template.layout',['content'=>'../dashboard','title'=>'dashboard']);
     });
    
 });
